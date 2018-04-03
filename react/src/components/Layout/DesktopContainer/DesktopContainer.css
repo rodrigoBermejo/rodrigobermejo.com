@@ -1,0 +1,55 @@
+.desktop-wrapper,
+.desktop-banner-wrapper,
+.desktop-navigation-wrapper,
+.desktop-content-wrapper,
+.desktop-footer-wrapper {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.desktop-wrapper {
+  display: grid;
+  overflow: hidden;
+  grid-template-areas:
+    'header header header header header header header header header header header header navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent navigation navigation navigation navigation'
+    'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer';
+  height: 100vh;
+}
+
+.desktop-banner-wrapper {
+  grid-area: header;
+  height: auto;
+}
+
+.desktop-content-wrapper {
+  grid-area: maincontent;
+  text-align: center;
+  padding: 2em !important;
+  overflow-y: scroll;
+}
+
+.desktop-navigation-wrapper {
+  grid-area: navigation;
+  width: 100%;
+  /*background-color: #14537e;*/
+}
+
+.desktop-footer-wrapper {
+  grid-area: footer;
+  padding: 2em;
+  height: 6em;
+}
