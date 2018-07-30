@@ -3,17 +3,17 @@ import {
   Header as HeaderModel,
   About as AboutModel,
   Resume as ResumeModel,
-  Footer as FooterModel
+  Footer as FooterModel,
+  Testimonials as TestimonialsModel
 } from "./model";
 
 import {
   Header as HeaderControl,
   About as AboutControl,
   Resume as ResumeControl,
-  Footer as FooterControl
+  Footer as FooterControl,
+  Testimonials as TestimonialsControl
 } from "./components";
-
-import "./App.css";
 
 class App extends Component {
   render() {
@@ -22,6 +22,7 @@ class App extends Component {
         <HeaderControl headerData={HeaderModel} />
         <AboutControl aboutData={AboutModel} />
         <ResumeControl resumeData={ResumeModel} />
+        <TestimonialsControl testimonialsData={TestimonialsModel} />
         <FooterControl footerData={FooterModel} />
       </div>
     );

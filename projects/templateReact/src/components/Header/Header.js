@@ -11,7 +11,8 @@ class Header extends Component {
         <Navigation navigationData={headerData.navigation} />
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">I am {headerData.name}</h1>
+            <h1 className="responsive-headline">{headerData.initials}</h1>
+            <h2 className="responsive-headline">{headerData.name}</h2>
             <h3>{headerData.role}</h3>
             <h3>{headerData.roleDescription}</h3>
             <hr />

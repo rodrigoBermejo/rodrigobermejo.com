@@ -1,7 +1,8 @@
 let Header = {
 
   "imagebaseurl": "https://techonoeticsclub.github.io/",
-  "name": `Rodrigo Leaños Bermejo`,
+  "initials": `rb`,
+  "name": `Rodrigo Bermejo`,
   "role": `SharePoint Specialist`,
   "roleDescription": `Information Technology and Services`,
   "navigation": [
@@ -16,6 +17,10 @@ let Header = {
     {
       "url": "#resume",
       "name": "Resume"
+    },
+    {
+      "url": "#testimonials",
+      "name": "Testimonials"
     }
   ],
   "socialNetworks": [
