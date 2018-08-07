@@ -1,2 +1,2 @@
-import ContactUs from './ContactUs';
+import ContactUs from "./ContactUs";
 export default ContactUs;

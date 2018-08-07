@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import {
-  Header as HeaderModel,
-  About as AboutModel,
-  Resume as ResumeModel,
-  Footer as FooterModel,
-  Testimonials as TestimonialsModel
-} from "./model";
+  Header as HeaderData,
+  About as AboutData,
+  Resume as ResumeData,
+  Footer as FooterData,
+  Testimonials as TestimonialsData
+} from "./services";
 
 import {
   Header as HeaderControl,
@@ -19,11 +19,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HeaderControl headerData={HeaderModel} />
-        <AboutControl aboutData={AboutModel} />
-        <ResumeControl resumeData={ResumeModel} />
-        <TestimonialsControl testimonialsData={TestimonialsModel} />
-        <FooterControl footerData={FooterModel} />
+        <HeaderControl headerData={HeaderData} />
+        <AboutControl aboutData={AboutData} />
+        <ResumeControl resumeData={ResumeData} />
+        <TestimonialsControl testimonialsData={TestimonialsData} />
+        <FooterControl footerData={FooterData} />
       </div>
     );
   }

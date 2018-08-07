@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 class Resume extends Component {
@@ -13,19 +13,26 @@ class Resume extends Component {
             </h1>
           </div>
           <div className="nine columns main-col">
-            {resumeData.education.map(item => {
+            {resumeData.education.map((item, i) => {
               return (
-                <div className="row item">
+                <div key={i} className="row item">
                   <div className="twelve columns">
-                    <h3>{item.institute}</h3>
-                    <p className="info">{item.title}
+                    <h3>
+                      <a href={item.url} target="_blank">
+                        <i className="fa fa-book" />
+                        <span> {item.institute}</span>
+                      </a>
+                    </h3>
+
+                    <p className="info">
+                      {item.title}
                       <span>•</span>
                       <em className="date">{item.class}</em>
                     </p>
                     <p>{item.description}</p>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -36,12 +43,16 @@ class Resume extends Component {
             </h1>
           </div>
           <div className="nine columns main-col">
-            {resumeData.work.map(item => {
+            {resumeData.work.map((item, i) => {
               return (
-                <div className="row item">
+                <div key={i} className="row item">
                   <div className="twelve columns">
                     <h3>{item.jobTitle}</h3>
-                    <p className="info">{item.company}
+                    <p className="info">
+                      <a href={item.url} target="_blank">
+                        <i className="fa fa-briefcase" />
+                        <span> {item.company}</span>
+                      </a>
                       <span>•</span>
                       <em className="date">{item.dates}</em>
                     </p>
@@ -49,7 +60,7 @@ class Resume extends Component {
                     <p>{item.functions}</p>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -60,15 +71,15 @@ class Resume extends Component {
             </h1>
           </div>
           <div className="nine columns main-col">
-            {resumeData.certifications.map(item => {
+            {resumeData.certifications.map((item, i) => {
               return (
-                <div className="row item">
+                <div key={i} className="row item">
                   <div className="twelve columns">
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -78,7 +89,7 @@ class Resume extends Component {
 }
 
 Resume.propTypes = {
-  resumeData: PropTypes.object.isRequired,
-}
+  resumeData: PropTypes.object.isRequired
+};
 
 export default Resume;

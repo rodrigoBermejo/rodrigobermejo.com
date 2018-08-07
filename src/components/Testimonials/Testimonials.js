@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class Testimonials extends Component {
   render() {
@@ -15,16 +15,17 @@ export default class Testimonials extends Component {
             <div className="ten columns flex-container">
               <div className="flexslider">
                 <ul className="slides">
-                  {testimonials.coWorkers.map(item => {
+                  {testimonials.coWorkers.map((item, i) => {
                     return (
-                      <li>
+                      <li key={i}>
                         <blockquote>
-                          <p>{item.testimonial}
-                          </p>
-                          <cite><a href={item.link}>{item.name}</a></cite>
+                          <p>{item.testimonial}</p>
+                          <cite>
+                            <a href={item.link}>{item.name}</a>
+                          </cite>
                         </blockquote>
                       </li>
-                    )
+                    );
                   })}
                 </ul>
               </div>

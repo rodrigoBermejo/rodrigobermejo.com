@@ -9,14 +9,14 @@ class Footer extends Component {
         <div className="row">
           <div className="twelve columns">
             <ul className="social-links">
-              {footerData.socialNetworks.map(item => {
+              {footerData.socialNetworks.map((item, i) => {
                 return (
-                  <li>
-                    <a href={item.url} target="_blank" >
+                  <li key={i}>
+                    <a href={item.url} target="_blank">
                       <i className={item.class} />
                     </a>
                   </li>
-                )
+                );
               })}
             </ul>
             <ul className="copyright">
@@ -35,7 +35,7 @@ class Footer extends Component {
 }
 
 Footer.propTypes = {
-  footerData: PropTypes.object.isRequired,
-}
+  footerData: PropTypes.object.isRequired
+};
 
 export default Footer;

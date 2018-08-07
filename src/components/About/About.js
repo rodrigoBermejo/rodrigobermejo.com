@@ -8,11 +8,17 @@ class About extends Component {
       <section id="about">
         <div className="row">
           <div className="three columns">
-            <img className="profile-pic" src={aboutData.profileImg} alt={aboutData.name} />
+            <img
+              className="profile-pic"
+              src={aboutData.profileImg}
+              alt={aboutData.name}
+            />
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
-            <p><span>{aboutData.profile}</span></p>
+            <p>
+              <span>{aboutData.profile}</span>
+            </p>
             <div className="row">
               <div className="columns contact-details">
                 <h2>Contact Details</h2>
@@ -27,7 +33,8 @@ class About extends Component {
               <div className="columns download">
                 <p>
                   <a href={aboutData.cvUrl} className="button">
-                    <i className="fa fa-download" />Download Resume</a>
+                    <i className="fa fa-download" />Download Resume
+                  </a>
                 </p>
               </div>
             </div>
@@ -39,7 +46,7 @@ class About extends Component {
 }
 
 About.propTypes = {
-  aboutData: PropTypes.object.isRequired,
-}
+  aboutData: PropTypes.object.isRequired
+};
 
 export default About;

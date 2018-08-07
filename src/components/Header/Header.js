@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Navigation from "./Navigation";
-import SocialNetworks from './SocialNetworks';
+import SocialNetworks from "./SocialNetworks";
 
 class Header extends Component {
   render() {
@@ -30,7 +30,7 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-  headerData: PropTypes.array.isRequired,
-}
+  headerData: PropTypes.object.isRequired
+};
 
 export default Header;

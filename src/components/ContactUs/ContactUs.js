@@ -1,6 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class ContactUs extends Component {
+  twitEventClick = () => {
+    window.open(
+      "https://twitter.com/intent/tweet?screen_name=rodrigoBermejo",
+      "_blank"
+    );
+  };
+
   render() {
     return (
       <section id="contact">
@@ -11,91 +18,80 @@ export default class ContactUs extends Component {
             </h1>
           </div>
           <div className="ten columns">
-            <p className="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-            </p>
+            <p className="lead">Let's get in touch.</p>
           </div>
         </div>
         <div className="row">
           <div className="eight columns">
-            {/* form */}
-            <form action method="post" id="contactForm" name="contactForm">
+            <form action="" method="post" id="contactForm" name="contactForm">
               <fieldset>
                 <div>
-                  <label htmlFor="contactName">Name
+                  <label htmlFor="contactName">
+                    Name:
                     <span className="required">*</span>
                   </label>
-                  <input type="text" defaultValue size={35} id="contactName" name="contactName" />
+                  <input
+                    type="text"
+                    size={35}
+                    id="contactName"
+                    name="contactName"
+                    autoComplete="name"
+                  />
                 </div>
                 <div>
-                  <label htmlFor="contactEmail">Email
+                  <label htmlFor="contactEmail">
+                    Email:
                     <span className="required">*</span>
                   </label>
-                  <input type="text" defaultValue size={35} id="contactEmail" name="contactEmail" />
+                  <input
+                    type="text"
+                    size={35}
+                    id="contactEmail"
+                    name="contactEmail"
+                    autoComplete="email"
+                  />
                 </div>
                 <div>
-                  <label htmlFor="contactSubject">Subject</label>
-                  <input type="text" defaultValue size={35} id="contactSubject" name="contactSubject" />
+                  <label htmlFor="contactSubject">Subject:</label>
+                  <input
+                    type="text"
+                    size={35}
+                    id="contactSubject"
+                    name="contactSubject"
+                    autoComplete="organization-title"
+                  />
                 </div>
                 <div>
-                  <label htmlFor="contactMessage">Message
+                  <label htmlFor="contactMessage">
+                    Message:
                     <span className="required">*</span>
                   </label>
-                  <textarea cols={50} rows={15} id="contactMessage" name="contactMessage" defaultValue={""} />
+                  <textarea
+                    cols={50}
+                    rows={4}
+                    id="contactMessage"
+                    name="contactMessage"
+                  />
                 </div>
                 <div>
                   <button className="submit">Submit</button>
                   <span id="image-loader">
-                    <img alt src="images/loader.gif" />
+                    <img src="images/loaderBlue.gif" alt="Sending..." />
                   </span>
                 </div>
               </fieldset>
             </form>
-            {/* Form End */}
-            {/* contact-warning */}
             <div id="message-warning"> Error boy</div>
-            {/* contact-success */}
             <div id="message-success">
               <i className="fa fa-check" />Your message was sent, thank you!
               <br />
             </div>
           </div>
           <aside className="four columns footer-widgets">
-            <div className="widget widget_contact">
-              <h4>Address and Phone</h4>
-              <p className="address">
-                Jonathan Doe
-                <br /> 1600 Amphitheatre Parkway
-                <br /> Mountain View, CA 94043 US
-                <br />
-                <span>(123) 456-7890</span>
-              </p>
-            </div>
             <div className="widget widget_tweets">
-              <h4 className="widget-title">Latest Tweets</h4>
-              <ul id="twitter">
-                <li>
-                  <span>
-                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                    bibendum auctor, nisi elit consequat ipsum
-                    <a href="#">http://t.co/CGIrdxIlI3</a>
-                  </span>
-                  <b>
-                    <a href="#">2 Days Ago</a>
-                  </b>
-                </li>
-                <li>
-                  <span>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                    ipsa quae ab illo inventore veritatis et quasi
-                    <a href="#">http://t.co/CGIrdxIlI3</a>
-                  </span>
-                  <b>
-                    <a href="#">3 Days Ago</a>
-                  </b>
-                </li>
-              </ul>
+              <button onClick={this.twitEventClick} className="send-me-a-tweet">
+                Send me a tweet
+              </button>
             </div>
           </aside>
         </div>

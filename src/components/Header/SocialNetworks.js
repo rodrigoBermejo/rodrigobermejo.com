@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 class SocialNetworks extends Component {
@@ -6,14 +6,14 @@ class SocialNetworks extends Component {
     let socialNetworksData = this.props.socialNetworksData;
     return (
       <ul className="social">
-        {socialNetworksData.map(item => {
-          return(
-            <li>
-              <a href={item.url} target="_blank" >
+        {socialNetworksData.map((item, i) => {
+          return (
+            <li key={i}>
+              <a href={item.url} target="_blank">
                 <i className={item.class} />
               </a>
             </li>
-          )
+          );
         })}
       </ul>
     );
@@ -21,7 +21,7 @@ class SocialNetworks extends Component {
 }
 
 SocialNetworks.propTypes = {
-  socialNetworksData: PropTypes.object.isRequired,
-}
+  socialNetworksData: PropTypes.array.isRequired
+};
 
 export default SocialNetworks;
