@@ -14,9 +14,13 @@ import {
   Footer as FooterControl,
   Testimonials as TestimonialsControl
 } from "./components";
+import ReactGA from "react-ga";
 
 class App extends Component {
   render() {
+    ReactGA.initialize("UA-124238178-1");
+    ReactGA.pageview(window.location.hash);
+
     return (
       <div className="App">
         <HeaderControl headerData={HeaderData} />
