@@ -5,6 +5,7 @@
   "homepage": "https://rodrigobermejo.github.io/rodrigobermejo.com/",
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "npm": "^6.4.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-ga": "^2.5.3",
@@ -14,8 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "npm run build",
-    //"deploy": "gh-pages -d build",
+    "deploy": "npm run build",
     "eject": "react-scripts eject"
   }
 }
