@@ -1,4 +1,11 @@
 {
-  "main.js": "static/js/main.f7533c13.js",
-  "main.js.map": "static/js/main.f7533c13.js.map"
+  "main.js": "/rodrigobermejo.com/static/js/main.fe529cce.chunk.js",
+  "main.js.map": "/rodrigobermejo.com/static/js/main.fe529cce.chunk.js.map",
+  "static/js/1.564b2de0.chunk.js": "/rodrigobermejo.com/static/js/1.564b2de0.chunk.js",
+  "static/js/1.564b2de0.chunk.js.map": "/rodrigobermejo.com/static/js/1.564b2de0.chunk.js.map",
+  "runtime~main.js": "/rodrigobermejo.com/static/js/runtime~main.8acfb88b.js",
+  "runtime~main.js.map": "/rodrigobermejo.com/static/js/runtime~main.8acfb88b.js.map",
+  "index.html": "/rodrigobermejo.com/index.html",
+  "precache-manifest.dab1ef0996e88b8b6d0b1c759905f49c.js": "/rodrigobermejo.com/precache-manifest.dab1ef0996e88b8b6d0b1c759905f49c.js",
+  "service-worker.js": "/rodrigobermejo.com/service-worker.js"
 }

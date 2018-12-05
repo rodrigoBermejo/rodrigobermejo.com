@@ -1,6 +1,6 @@
 {
   "name": "rodrigobermejo.com",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "homepage": "https://rodrigobermejo.github.io/rodrigobermejo.com/",
   "dependencies": {
@@ -9,7 +9,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-ga": "^2.5.3",
-    "react-scripts": "1.1.4"
+    "react-scripts": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,5 +17,9 @@
     "test": "react-scripts test --env=jsdom",
     "deploy": "npm run build",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "ie > 10"
+  ]
 }

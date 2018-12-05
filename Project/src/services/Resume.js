@@ -22,12 +22,12 @@ let Resume = {
   ],
   work: [
     {
-      jobTitle: "Senior SharePoint Developer",
+      jobTitle: "Software Architect",
       company: "Neoris",
       url: "https://www.neoris.com/",
       location: "Monterrey, México",
       dates: "July 2018 - Present",
-      functions: ``
+      functions: `Practice Leader of Portals and Collaboration of Digital Delivery Center. Responsible to create proposals of value and high impact to the diferent kind of clients and guide the team to implement solutions based on better practices.\nMicrosoft SharePoint: Migrations and implementations of intranets.\nREACT + NodeJS + Headless CMS: Implementation of headless CMS for diferent kind of solutions.`
     },
     {
       jobTitle: "Portals & Collaboration Engineer",
