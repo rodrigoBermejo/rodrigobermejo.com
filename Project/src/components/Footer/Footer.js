@@ -12,7 +12,7 @@ class Footer extends Component {
               {footerData.socialNetworks.map((item, i) => {
                 return (
                   <li key={i}>
-                    <a href={item.url} target="_blank">
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
                       <i className={item.class} />
                     </a>
                   </li>

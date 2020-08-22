@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rodrigobermejo.com/precache-manifest.dab1ef0996e88b8b6d0b1c759905f49c.js"
+  "/rodrigobermejo.com/precache-manifest.69401f316cfbf0c5ba05522c1fe1f613.js"
 );
 
 workbox.clientsClaim();

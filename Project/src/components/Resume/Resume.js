@@ -18,7 +18,7 @@ class Resume extends Component {
                 <div key={i} className="row item">
                   <div className="twelve columns">
                     <h3>
-                      <a href={item.url} target="_blank">
+                      <a href={item.url} target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-book" />
                         <span> {item.institute}</span>
                       </a>
@@ -49,7 +49,7 @@ class Resume extends Component {
                   <div className="twelve columns">
                     <h3>{item.jobTitle}</h3>
                     <p className="info">
-                      <a href={item.url} target="_blank">
+                      <a href={item.url} target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-briefcase" />
                         <span> {item.company}</span>
                       </a>
